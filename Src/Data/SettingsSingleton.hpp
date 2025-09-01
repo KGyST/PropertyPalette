@@ -5,6 +5,11 @@
 #include	"ACAPinc.h"					// also includes APIdefs.h
 #include	"../APICommon.h"
 
+#if ACVER == 27
+//#include	"ACAPI_MigrationHeader.hpp"
+#include	"AC27.hpp"
+#endif
+
 #include	<mutex>
 #include	"../Enums/PropertySelectMode.hpp"
 #include	"../Enums/FilterTypes.hpp"

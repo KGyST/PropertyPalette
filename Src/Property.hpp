@@ -1,9 +1,12 @@
 ﻿#ifndef PROPERTY_HPP
 #define PROPERTY_HPP
 
-#include	"APIEnvir.h"
-#include	"ACAPinc.h"					// also includes APIdefs.h
-#include	"APICommon.h"
+
+
+#if ACVER == 27
+//#include	"ACAPI_MigrationHeader.hpp"
+#include	"..\..\CPPCommonLibs\AC27.hpp"
+#endif
 
 bool operator== (const API_Property& i_this, const API_Property& i_other);
 inline bool operator!= (const API_Property& i_this, const API_Property& i_other) { return !operator==(i_this, i_other); };

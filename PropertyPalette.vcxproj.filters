@@ -1,96 +1,105 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="Src\$(ProjectName).cpp" />
-    <ClCompile Include="Src\APICommon.c" />
-    <ClCompile Include="Src\Property.cpp" />
-    <ClCompile Include="Src\Data\SettingsSingleton.cpp">
-      <Filter>Data</Filter>
-    </ClCompile>
-    <ClCompile Include="Src\DisplayedProperty.cpp">
-      <Filter>Data</Filter>
-    </ClCompile>
-    <ClCompile Include="..\CPPCommonLibs\Logger\Logger.cpp">
-      <Filter>CPPCommonLibs</Filter>
+    <ClCompile Include="..\CPPCommonLibs\WinReg\WinReg.cpp">
+      <Filter>Sources\CPPCommonLibs</Filter>
     </ClCompile>
     <ClCompile Include="..\CPPCommonLibs\Utils\Utils.cpp">
-      <Filter>CPPCommonLibs</Filter>
-    </ClCompile>
-    <ClCompile Include="..\CPPCommonLibs\WinReg\WinReg.cpp">
-      <Filter>CPPCommonLibs</Filter>
+      <Filter>Sources\CPPCommonLibs</Filter>
     </ClCompile>
     <ClCompile Include="..\CPPCommonLibs\DateTime\DateTime.cpp">
-      <Filter>CPPCommonLibs</Filter>
+      <Filter>Sources\CPPCommonLibs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CPPCommonLibs\Logger\Logger.cpp">
+      <Filter>Sources\CPPCommonLibs</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\DisplayedProperty.cpp">
+      <Filter>Sources\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Property.cpp">
+      <Filter>Sources\Data</Filter>
     </ClCompile>
     <ClCompile Include="Src\Data\S_PropertyGroup.cpp">
-      <Filter>Data</Filter>
+      <Filter>Sources\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Data\SettingsSingleton.cpp">
+      <Filter>Sources\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\APICommon.c">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\$(ProjectName).cpp">
+      <Filter>Sources</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Src\APICommon.h" />
-    <ClInclude Include="Src\PropertyPalette.h" />
-    <ClInclude Include="Src\Property.h" />
     <ClInclude Include="Src\Data\SettingsSingleton.hpp">
-      <Filter>Data</Filter>
+      <Filter>Sources\Data</Filter>
     </ClInclude>
     <ClInclude Include="Src\DisplayedProperty.hpp">
-      <Filter>Data</Filter>
+      <Filter>Sources\Data</Filter>
     </ClInclude>
     <ClInclude Include="Src\Enums\PropertySelectMode.hpp">
-      <Filter>Enums</Filter>
+      <Filter>Sources\Enums</Filter>
     </ClInclude>
     <ClInclude Include="Src\Enums\OnTabTypes.hpp">
-      <Filter>Enums</Filter>
+      <Filter>Sources\Enums</Filter>
     </ClInclude>
     <ClInclude Include="..\CPPCommonLibs\Logger\Logger.hpp">
-      <Filter>CPPCommonLibs</Filter>
+      <Filter>Sources\CPPCommonLibs</Filter>
     </ClInclude>
     <ClInclude Include="..\CPPCommonLibs\Logger\Loglevels.hpp">
-      <Filter>CPPCommonLibs</Filter>
+      <Filter>Sources\CPPCommonLibs</Filter>
     </ClInclude>
     <ClInclude Include="..\CPPCommonLibs\Logger\LoglevelStrings.hpp">
-      <Filter>CPPCommonLibs</Filter>
+      <Filter>Sources\CPPCommonLibs</Filter>
     </ClInclude>
     <ClInclude Include="..\CPPCommonLibs\Utils\Utils.hpp">
-      <Filter>CPPCommonLibs</Filter>
+      <Filter>Sources\CPPCommonLibs</Filter>
     </ClInclude>
     <ClInclude Include="..\CPPCommonLibs\WinReg\WinReg.hpp">
-      <Filter>CPPCommonLibs</Filter>
+      <Filter>Sources\CPPCommonLibs</Filter>
     </ClInclude>
     <ClInclude Include="..\CPPCommonLibs\DateTime\DateTime.hpp">
-      <Filter>CPPCommonLibs</Filter>
+      <Filter>Sources\CPPCommonLibs</Filter>
     </ClInclude>
     <ClInclude Include="Src\Data\S_PropertyGroup.hpp">
-      <Filter>Data</Filter>
+      <Filter>Sources\Data</Filter>
     </ClInclude>
     <ClInclude Include="Src\Enums\FilterTypes.hpp">
-      <Filter>Enums</Filter>
+      <Filter>Sources\Enums</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Property.hpp">
+      <Filter>Sources\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\PropertyPalette.hpp">
+      <Filter>Sources</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\APICommon.h">
+      <Filter>Sources</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Library Include="$(ACDevKitModules)\DGLib\Win\DGImp.lib">
-      <Filter>Lib</Filter>
+      <Filter>Libs</Filter>
     </Library>
     <Library Include="$(ACDevKitModules)\GSRoot\Win\GSRootImp.lib">
-      <Filter>Lib</Filter>
+      <Filter>Libs</Filter>
     </Library>
     <Library Include="$(ACDevKitModules)\GSUtils\Win\GSUtilsImp.lib">
-      <Filter>Lib</Filter>
+      <Filter>Libs</Filter>
     </Library>
     <Library Include="$(ACDevKitModules)\InputOutput\Win\InputOutputImp.lib">
-      <Filter>Lib</Filter>
-    </Library>
-    <Library Include="$(ACDevKitModules)\LibXL\Win\LibXLImp.lib">
-      <Filter>Lib</Filter>
+      <Filter>Libs</Filter>
     </Library>
     <Library Include="$(ACDevKitModules)\RS\Win\RSImp.LIB">
-      <Filter>Lib</Filter>
+      <Filter>Libs</Filter>
     </Library>
-    <Library Include="$(ACDevKitModules)\ObjectDatabase\Win\ObjectDatabaseImp.LIB">
-      <Filter>Lib</Filter>
+    <Library Include="$(ACDevKitModules)\LibXL\Win\LibXL.lib">
+      <Filter>Libs</Filter>
     </Library>
-    <Library Include="$(ACDevKitSupport)\Lib\Win\ACAP_STATD.lib">
-      <Filter>Lib</Filter>
+    <Library Include="$(ACDevKitSupport)\Lib$(WinCorr)\ACAP_STATD.lib">
+      <Filter>Libs</Filter>
     </Library>
   </ItemGroup>
   <ItemGroup>
@@ -105,19 +114,22 @@
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <Filter Include="Lib">
+    <Filter Include="Libs">
       <UniqueIdentifier>{82cfc169-1eab-4b9e-b3f5-efdf6be48765}</UniqueIdentifier>
     </Filter>
     <Filter Include="Resources">
       <UniqueIdentifier>{866c48ce-85a4-4fd1-af81-5679ee035586}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Enums">
+    <Filter Include="Sources">
+      <UniqueIdentifier>{a3aef5fb-f8a0-4cee-98ca-bf5696357aed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sources\Enums">
       <UniqueIdentifier>{e0795212-692d-4475-b154-531165a99321}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Data">
+    <Filter Include="Sources\Data">
       <UniqueIdentifier>{3979ab9b-aae0-478c-b428-214a72659216}</UniqueIdentifier>
     </Filter>
-    <Filter Include="CPPCommonLibs">
+    <Filter Include="Sources\CPPCommonLibs">
       <UniqueIdentifier>{89e462b0-d65a-420a-9af2-e2f0c5c1da4c}</UniqueIdentifier>
     </Filter>
     <Filter Include="Visualizers">
@@ -125,31 +137,28 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <Natvis Include="..\..\Downloads\GSVisualStudioDebugVisualizers\BIMData.natvis">
+    <Natvis Include="$(NatVisRoot)\Brep.natvis">
       <Filter>Visualizers</Filter>
     </Natvis>
-    <Natvis Include="..\..\Downloads\GSVisualStudioDebugVisualizers\Brep.natvis">
+    <Natvis Include="$(NatVisRoot)\DynamicObject.natvis">
       <Filter>Visualizers</Filter>
     </Natvis>
-    <Natvis Include="..\..\Downloads\GSVisualStudioDebugVisualizers\DynamicObject.natvis">
+    <Natvis Include="$(NatVisRoot)\Geometry.natvis">
       <Filter>Visualizers</Filter>
     </Natvis>
-    <Natvis Include="..\..\Downloads\GSVisualStudioDebugVisualizers\Geometry.natvis">
+    <Natvis Include="$(NatVisRoot)\GS.natvis">
       <Filter>Visualizers</Filter>
     </Natvis>
-    <Natvis Include="..\..\Downloads\GSVisualStudioDebugVisualizers\GS.natvis">
+    <Natvis Include="$(NatVisRoot)\GSModeler.natvis">
       <Filter>Visualizers</Filter>
     </Natvis>
-    <Natvis Include="..\..\Downloads\GSVisualStudioDebugVisualizers\GSModeler.natvis">
+    <Natvis Include="$(NatVisRoot)\GSXML.natvis">
       <Filter>Visualizers</Filter>
     </Natvis>
-    <Natvis Include="..\..\Downloads\GSVisualStudioDebugVisualizers\GSXML.natvis">
+    <Natvis Include="$(NatVisRoot)\IO.natvis">
       <Filter>Visualizers</Filter>
     </Natvis>
-    <Natvis Include="..\..\Downloads\GSVisualStudioDebugVisualizers\IO.natvis">
-      <Filter>Visualizers</Filter>
-    </Natvis>
-    <Natvis Include="..\..\Downloads\GSVisualStudioDebugVisualizers\ODB.natvis">
+    <Natvis Include="$(NatVisRoot)\ODB.natvis">
       <Filter>Visualizers</Filter>
     </Natvis>
   </ItemGroup>

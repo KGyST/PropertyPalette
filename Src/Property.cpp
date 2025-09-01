@@ -1,4 +1,8 @@
-﻿#include "Property.h"
+﻿#include	"APIEnvir.h"
+#include	"ACAPinc.h"					// also includes APIdefs.h
+#include	"APICommon.h"
+
+#include "Property.hpp"
 
 bool _equals(const API_VariantType i_valType, 
 	const API_Variant& i_this, 

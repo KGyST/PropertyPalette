@@ -11,4 +11,10 @@
 #ifndef _PROPERTY_PALETTE_H
 #define _PROPERTY_PALETTE_H
 
+#if ACVER == 27
+//#include	"ACAPI_MigrationHeader.hpp"
+#include	"..\..\CPPCommonLibs\AC27.hpp"
+#endif
+
 #endif	// _PROPERTY_PALETTE_H
+

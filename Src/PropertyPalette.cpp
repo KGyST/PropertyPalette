@@ -7,8 +7,9 @@
 #include	"APIEnvir.h"
 #include	"ACAPinc.h"					// also includes APIdefs.h
 #include	"APICommon.h"
+#include	<Windows.h> 
 
-//#include	"PropertyPalette.h"
+#include	"PropertyPalette.hpp"
 #include	"DG.h"
 //#include	"Algorithms.hpp"
 //#include	"FileSystem.hpp"
@@ -25,7 +26,6 @@
 #include	"Data/S_PropertyGroup.hpp"
 //#include	<exception>
 //#include	"Logger/Logger.hpp"
-
 
 using namespace std;
 

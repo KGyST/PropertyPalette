@@ -5,6 +5,11 @@
 #include	"ACAPinc.h"					// also includes APIdefs.h
 #include	"../APICommon.h"
 
+#if ACVER == 27
+//#include	"ACAPI_MigrationHeader.hpp"
+#include	"AC27.hpp"
+#endif
+
 struct S_PropertyGroup : API_PropertyGroup {
 	GS::HashSet<API_Guid> propertieS;
 	S_PropertyGroup(API_PropertyGroup& i_group) : API_PropertyGroup(i_group) {};
