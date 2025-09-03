@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="UserMacros">
+    <ACDevKit>..\..\support\archicad-buildsupport\AC$(ACVersion)\API</ACDevKit>
+    <ACDevKitSupport>$(ACDevKit)\Support</ACDevKitSupport>
+    <ACDevKitModules>$(ACDevKitSupport)\Modules</ACDevKitModules>
+    <CommonModules>..\CPPCommonLibs</CommonModules>
+    <NatVisRoot>..\..\support\archicad-buildsupport\Debug_Visualizers\GSVisualStudioDebugVisualizers</NatVisRoot>
+  </PropertyGroup>
+</Project>
