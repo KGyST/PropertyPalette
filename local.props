@@ -4,7 +4,7 @@
     <ACDevKit>..\..\support\archicad-buildsupport\AC$(ACVersion)\API</ACDevKit>
     <ACDevKitSupport>$(ACDevKit)\Support</ACDevKitSupport>
     <ACDevKitModules>$(ACDevKitSupport)\Modules</ACDevKitModules>
-    <CommonModules>..\CPPCommonLibs</CommonModules>
+    <CommonModules>..\..\CommonLibs.cpp</CommonModules>
     <NatVisRoot>..\..\support\archicad-buildsupport\Debug_Visualizers\GSVisualStudioDebugVisualizers</NatVisRoot>
   </PropertyGroup>
 </Project>

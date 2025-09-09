@@ -5,7 +5,7 @@
 
 #if ACVER == 27
 //#include	"ACAPI_MigrationHeader.hpp"
-#include	"..\..\CPPCommonLibs\AC27.hpp"
+#include	"AC27.hpp"
 #endif
 
 bool operator== (const API_Property& i_this, const API_Property& i_other);

@@ -67,8 +67,7 @@
     <BuildType>Release</BuildType>
   </PropertyGroup>
   <!-- ACVersion must be defined -->
-  <Import Project="..\local.props" Condition="Exists('..\local.props')" />
-  <Import Project="local.props" Condition="!Exists('..\local.props')" />
+  <Import Project="local.props" />
   <PropertyGroup Label="Globals">
     <ProjectGuid>{24c5efac-a5fc-4235-9dcf-976D7AA951C6}</ProjectGuid>
   </PropertyGroup>
@@ -280,10 +279,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\CPPCommonLibs\DateTime\DateTime.cpp" />
-    <ClCompile Include="..\CPPCommonLibs\Logger\Logger.cpp" />
-    <ClCompile Include="..\CPPCommonLibs\Utils\Utils.cpp" />
-    <ClCompile Include="..\CPPCommonLibs\WinReg\WinReg.cpp" />
+    <ClCompile Include="$(CommonModules)\DateTime\DateTime.cpp" />
+    <ClCompile Include="$(CommonModules)\Logger\Logger.cpp" />
+    <ClCompile Include="$(CommonModules)\Utils\Utils.cpp" />
+    <ClCompile Include="$(CommonModules)\WinReg\WinReg.cpp" />
     <ClCompile Include="Src\Data\SettingsSingleton.cpp" />
     <ClCompile Include="Src\$(ProjectName).cpp" />
     <ClCompile Include="Src\APICommon.c" />
@@ -361,12 +360,12 @@
     </Library>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\CPPCommonLibs\DateTime\DateTime.hpp" />
-    <ClInclude Include="..\CPPCommonLibs\Logger\Logger.hpp" />
-    <ClInclude Include="..\CPPCommonLibs\Logger\Loglevels.hpp" />
-    <ClInclude Include="..\CPPCommonLibs\Logger\LoglevelStrings.hpp" />
-    <ClInclude Include="..\CPPCommonLibs\Utils\Utils.hpp" />
-    <ClInclude Include="..\CPPCommonLibs\WinReg\WinReg.hpp" />
+    <ClInclude Include="$(CommonModules)\DateTime\DateTime.hpp" />
+    <ClInclude Include="$(CommonModules)\Logger\Logger.hpp" />
+    <ClInclude Include="$(CommonModules)\Logger\Loglevels.hpp" />
+    <ClInclude Include="$(CommonModules)\Logger\LoglevelStrings.hpp" />
+    <ClInclude Include="$(CommonModules)\Utils\Utils.hpp" />
+    <ClInclude Include="$(CommonModules)\WinReg\WinReg.hpp" />
     <ClInclude Include="Src\Data\SettingsSingleton.hpp" />
     <ClInclude Include="Src\APICommon.h" />
     <ClInclude Include="Src\Data\S_PropertyGroup.hpp" />

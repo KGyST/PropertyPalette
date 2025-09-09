@@ -20,7 +20,7 @@
 //#include	"Property.h"
 #include	"DisplayedProperty.hpp"
 #include	"Enums/PropertySelectMode.hpp"
-#include	"Enums/PropertySelectMode.hpp"
+//#include	"Enums/PropertySelectMode.hpp"
 #include	"Enums/FilterTypes.hpp"
 #include	"Data/SettingsSingleton.hpp"
 #include	"Data/S_PropertyGroup.hpp"
